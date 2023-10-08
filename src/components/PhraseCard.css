@@ -1,0 +1,5 @@
+.textEffect {
+    color: white;
+    -webkit-text-stroke-width: 2.4px;
+    -webkit-text-stroke-color: #ffa645;
+}
