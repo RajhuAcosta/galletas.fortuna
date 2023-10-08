@@ -3,7 +3,7 @@ import './App.css';
 import phrases from "./db/phrases.json";
 import { getRandomElement } from './utils/random.js';
 import PhraseCard from './components/PhraseCard';
-// import { backgrounds } from './constants/backgrounds';
+import { backgrounds } from './constants/backgrounds';
 
 function App() {
   const [phrase, setPhrase] = useState(getRandomElement(phrases));
@@ -11,7 +11,8 @@ function App() {
     setPhrase(getRandomElement(phrases));
   }
   return (
-    <main className="min-h-screen bg-cover bg-center overflow-hidden text-center font-[Fredoka] items-center px-2" style={{backgroundImage: `url(/bg4.png)`}}>
+    <main className="min-h-screen bg-cover bg-center overflow-hidden text-center font-[Fredoka] items-center px-2" 
+    style={{backgroundImage: `url(${getRandomElement(backgrounds)})`}}>
       <PhraseCard prop={phrase} 
       handleChangePhrase={handleChangePhrase}/>
     </main>

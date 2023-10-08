@@ -1,4 +1,4 @@
-const backgrounds = ["/bg1.png","/bg2.png","/bg3.png","/bg4.png"];
+const backgrounds = ["/bgs/bg1.png","/bgs/bg2.png","/bgs/bg3.png","/bgs/bg4.png"];
 
 export {
     backgrounds
