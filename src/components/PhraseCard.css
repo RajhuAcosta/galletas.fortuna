@@ -2,4 +2,10 @@
     color: white;
     -webkit-text-stroke-width: 2.4px;
     -webkit-text-stroke-color: #ffa645;
+    @media (min-width: 640px) {
+        -webkit-text-stroke-width: 3.7px;
+    }
+    @media (min-width: 1024px) {
+        -webkit-text-stroke-width: 2.45px;
+    }
 }
